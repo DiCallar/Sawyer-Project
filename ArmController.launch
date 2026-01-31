@@ -1,0 +1,9 @@
+<launch>
+    <node name="Joy" pkg="joy" type="joy_node" output="screen">
+        <param name="autorepeat_rate" value="20" />
+    </node>
+
+    <node name="ControllerToArm" pkg="cu_sawyer_gamepad" type="ControllerToArm" output="screen">
+        <param name="alfa_" value="0.5"/>
+    </node>
+</launch>
